@@ -23,6 +23,8 @@ namespace FakeItEasyQuickstart
             
             // asserting uses the exact same syntax as when configuring calls—
             // no need to learn another syntax
+
+            //shop.BuyCandyが呼ばれてて,引数がlolipopとequalじゃないとテスト失敗
             A.CallTo(() => shop.BuyCandy(lollipop)).MustHaveHappened();
         }
     }
